@@ -1,0 +1,536 @@
+footer {
+	padding: 20px 0;
+	font-size: 14px;
+	background-color: #222;
+}
+footer p, footer span , footer button {
+	color: #fff;
+}
+.notice {
+	padding: 30px 188px;
+}
+.notice-box {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-list {
+	width: 45%;
+}
+
+.txt01 {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.bg  {
+	position: relative;
+	display: inline-block;
+	width: 15px;
+    height: 15px;
+}	
+.bg::before,
+.bg::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+
+}
+.bg::before {
+	width: 100%;
+	height: 1px;
+}
+.bg::after {
+	width: 1px;
+	height: 100%;
+}
+.check {
+	padding: 2px 14px;
+}
+.txt01 > a:first-child {
+	padding-left: 0;
+}
+.txt01 > a:last-child {
+	padding-left: 50px;
+}
+.txt01 .size {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.noticemore > span {
+	position: relative;
+	font-size: 11px;
+	padding-right: 40px;
+	letter-spacing: -0.05em;
+}
+.noticemore > span::before {
+	content: "";
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #444;
+}
+.noticemore > span:last-child::before {
+	display: none;
+}
+.footer-list02 {
+	display: flex;
+	justify-content: space-between;
+	width: 510px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.icon-box  {
+	display: flex;
+	flex-direction: column;
+}
+.icon-box > p {
+	font-size: 24px;
+}
+.txt {
+	display: flex;
+	flex-direction: column;
+}
+.txt p {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+.adress {
+	font-size: 12px;
+	line-height: 1.8;
+	opacity: 0.7;
+}
+.icontv-list > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+}
+.icontv > span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+    background: url(../img/ico_naver.svg) no-repeat center center /100%;
+}
+.icontv > .y {
+	background-image: url(../img/ico_youtube.svg);
+}
+.icontv > .k {
+	background-image: url(../img/ico_kakao.svg);
+}
+.copy {
+	font-size: 12px;
+	opacity: 0.5;
+	letter-spacing: -0.05em;
+}
+
+.footer-list03{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.line1 {
+    display: inline-block;
+    width: 2px;
+    height: 116px;
+    font-size: 0;
+    background-color: #444;
+}
+.phone > span {
+	display: block;
+}
+.phone > span:first-child {
+	font-size: 14px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.phone > span + span {
+	font-size: 24px;
+	font-weight: 500;
+	padding-bottom: 1rem;
+}
+.faq {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.faq > a {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 68px;
+	height: 32px;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 7px 0;
+}
+.faq span {
+		font-size: 11px;
+		letter-spacing: -0.02em;
+	}
+.time {
+	padding-top: 1.6rem;
+}
+.time > span {
+	display: block;
+	line-height: 1.8;
+	letter-spacing: -0.05em;
+}
+.time > p {
+	font-size: 15px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.email-box {
+	width: 100%;
+}
+footer .email-box input {
+    border: none;
+    width: calc(100% - 48px);
+    height: 25px;
+    background-color: #949494;
+    box-sizing: border-box;
+    padding: 0 30px 0 10px;
+}
+#email-fot {
+	color: #222;
+    font-size: 11px;
+}
+.email-clickbox {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33px;
+	height: 25px;
+	margin-left: 5px;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.email-clickbox > span {
+	font-size: 11px;
+	font-weight: 600;
+	color: #222;
+}
+.email-clickbox:hover {
+	opacity: 1;
+}
+
+.gudock {
+	font-size: 11px;
+	padding: 16px 0;
+	line-height: 1.8;
+	word-break: keep-all;
+}
+.line {
+	border-bottom: 1px solid #fff;
+}
+.FAQ {
+	padding-top: 0.7em;
+}
+.FAQ > span {
+	display: block;
+	line-height: 1.8;
+}
+.FAQ > p {
+	font-size: 15px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+@media (max-width: 1630px) {
+	.notice {
+		padding: 30px 100px;
+	}
+	.footer-list {
+		width: 47%;
+		padding: 0;
+	}
+	.txt01 {
+		font-size: 12px;
+	}
+	.noticemore > span {
+		font-size: 8px;
+	}
+	.phone > span:first-child {
+		font-size: 13px;
+	}
+	.phone > span + span {
+		font-size: 22px;
+	}
+	.faq > a {
+		width: 56px;
+		padding: 7px 0;
+	}
+	.faq span {
+		font-size: 8px;
+	}
+	.time > span {
+		font-size: 12px;
+	}
+	.FAQ > span {
+		font-size: 12px;
+	}
+}
+@media (max-width: 1440px) {
+	.notice {
+		padding: 30px 80px;
+	}
+}
+@media (max-width: 1280px) {
+	.notice {
+		padding: 30px 32px;
+	}
+	.email {
+		display: inline-block;
+		width: 92%;
+	}
+	.gudock {
+		font-size: 8px;
+	}
+}
+@media (max-width: 1160px) {
+	.notice {
+		padding: 30px 18px;
+	}
+	.noticemore > span {
+		padding-right: 30px;
+	}
+	.noticemore > span::before {
+		right: 14px;
+	}
+	.check {
+	    padding: 2px 8px;
+	}
+}
+@media (max-width: 1065px) {
+	.adress {
+		left: 25%;
+	}
+} 	
+@media (max-width: 1050px) {
+	footer {
+		font-size: 14px;
+		padding: 30px;
+	}
+	.notice-box {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	}
+	.notice {
+		padding: 0px 150px;
+	}
+	.noticemore > span {
+	    padding-right: 50px;
+	}
+	.noticemore > span::before {
+		top: 2px;
+		right: 30px;
+	}
+	.footer-list {
+		width: 100%;
+	}
+	.footer-list02 {
+		width: 83%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.icon-list > a {
+	    width: 36px;
+	    height: 36px;
+	   
+	}
+	.icon-box {
+		justify-content: center;
+	}
+	.icon-box > p {
+	    font-size: 36px;
+	}
+	.adress {
+		line-height: 2.2;
+	}
+	.txt01 {
+		justify-content: space-between;
+		font-size: 14px;
+		padding-bottom: 25px;
+	}
+	
+	.txt01 .size {
+	    font-size: 15px;
+	    font-weight: 500;
+	}
+	.up {
+		font-size: 14px;
+		letter-spacing: 0.08em;
+	}
+	/*.pdd {
+		padding: 2px 2px;
+	}*/
+	.noticemore > span {
+		font-size: 13px;
+	}
+	.adress {
+		font-size: 12.3px;
+	}
+
+	.phone > span:first-child {
+		font-size: 14px;
+		padding-bottom: 13px;
+	}
+	.phone > span + span {
+		font-size: 32px;
+	}
+	.faq > a {
+	    width: 77px;
+	    padding: 7px 0;
+	}
+	.time > p {
+		font-size: 18px;
+	}
+	.time > span {
+		font-size: 14px;
+	}
+	.line1 {
+		display: block;
+	}
+	.list04 {
+		padding-left: 10px;
+	}
+	.email {
+	    width: 87%;
+	}
+	.email > span {
+		font-size: 12px;
+	}
+	.email > span + span {
+	    padding-left: 172px;
+	}
+	.gudock {
+		font-size: 14px;
+	}
+	.FAQ {
+		padding-top: 1.8rem;
+	}
+	.FAQ > p{
+		font-size: 18px;
+	}
+	.FAQ > span {
+	    font-size: 14px;
+	}
+	.copy {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 1048px) {
+	.notice {
+		padding: 0px 130px;
+	}
+}
+@media (max-width: 1040px) {
+	.notice {
+		padding: 0px 100px;
+	}
+}  	
+@media (max-width: 1020px) {
+	.notice {
+		padding: 0px 80px;
+	}
+} 
+@media (max-width: 982px) {
+	.noticemore > span {
+	    padding-right: 34px;
+	}
+	.noticemore > span::before {
+	    right: 15px;
+	}
+} 
+@media (max-width: 910px) {
+	.notice {
+		padding: 0px 30px;
+	}
+} 
+@media (max-width: 858px) {
+	.noticemore > span {
+	    padding-right: 52px;
+	}
+	.footer-list02 {
+		width: 88%;
+	}
+} 
+@media (max-width: 858px) {
+	.noticemore > span {
+	    padding-right: 35px;
+	}
+	.noticemore > span::before {
+	    right: 15px;
+	}
+}	
+@media (max-width: 750px) {
+	.notice {
+	    padding: 0px;
+	}
+}
+@media (max-width: 665px) {
+	footer {
+		padding: 20px;
+		font-size: 12px;
+	}
+	.txt01 {
+		font-size: 12px;
+	}
+	.up {
+		font-size: 12px;
+	}
+	.txt01 .date {
+		font-size: 11px;
+	}
+	.bg {
+		width: 14px;
+		height: 14px;
+	}
+	.noticemore > span {
+		font-size: 12px;
+		padding-right: 34px;
+	}
+	.footer-list02 {
+		width: 100%;
+	}
+	.icon-box > p {
+		font-size: 34px;
+	}
+	.icon-list > a {
+		width: 30px;
+		height: 30px;
+	}
+	.phone > span + span {
+		font-size: 28px;
+	}
+	.gudock {
+		font-size: 12px;
+	}
+	.email > span + span {
+		padding-left: 128px;
+	}
+}		
+@media (max-width: 660px) {
+	footer {
+		padding: 10px;
+	}
+	.noticemore > span {
+		font-size: 10px;
+		padding-right: 22px;
+	}
+	.email {
+		height: 12px;
+		padding: 2px 15px;
+	}
+}

@@ -1,0 +1,440 @@
+a {
+	color: #222;
+}
+
+header {
+	position: fixed;
+	box-sizing: border-box;
+	width: 100%;
+/*	height: 100px;*/
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: height 0.3s;
+	z-index: 90;
+}
+/* pc에서 스크롤 내릴 때, 햄버튼 누를 때 */
+header.on {
+/*	height: 70px;*/
+	background-color: #fff;
+	box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.header_inner {
+	position: relative;
+	max-width: 1580px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.header-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-title .icon-list > li {
+	display: inline-block;
+}
+.header-title .icon-list .icon > a {
+	display: inline-block;
+	width: 24px;
+	height: 100%;
+	text-indent: -9999px;
+	background: url(../img/sp_common2_5279409d.png) no-repeat center / 100%;
+	margin: 0 4px;
+	padding: 21px 0;
+	box-sizing: border-box;
+}
+.header-title .icon-list .icon.icon02 > a {
+	background-image: url(../img/shopping_bag_black_24dp.png);
+}
+.header-title .icon-list .icon.icon03 > a {
+	background-image: url(../img/location.png);
+}
+.header-title .icon-list .icon.icon04 > a {
+	background-image: url(../img/smile_alt_black_18dp.png);
+}
+
+.smile-depth-box.on {
+	display: block;
+}
+.smile-depth-box {
+	display: none;
+}
+.smile-depth {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	top: 101%;
+	right: -35px;
+	width: 140px;
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 20px 20px;
+	border-top: solid 1px #dedede;
+}
+.smile-depth-box li {
+	font-size: 14px;
+	padding: 8px 0;
+}
+.smile-depth-box li:last-child {
+	padding-bottom: 0;
+}
+h1 {
+	display: inline-block;
+	vertical-align: middle;
+	/*height: 30px;*/
+}
+h1 a > span {
+	color: #222;
+	padding: 0 60px;
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: -0.05em;
+}
+
+.navi-menu {
+	display: inline-block;
+/*	width: 50%;*/
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle
+}
+.navi-menu li {
+	display: inline-block;
+}
+.navi-menu {
+	margin-left: 145px;
+}
+.navi-list a {
+	display: inline-block;
+	margin: 0 20px;
+	font-size: 15px;
+	color: #222;
+	padding: 22px 48px;
+}
+
+.navi-list li {
+	position: relative;
+}
+
+.navi-list li::after {
+	display: none;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #222;
+	transition: width 2s ease;
+}
+.navi-list li.active::after {
+	display: block;
+	width: 100%;
+} 
+
+.ham-btn {
+	width: 28px;
+	height: 28px;
+	text-indent: -9999px;
+	vertical-align: middle
+}
+.ham-btn > span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #222;
+}
+.ham-btn > span::before,
+.ham-btn > span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #222;
+}
+.ham-btn > span::before {
+	top: -10px;
+}
+.ham-btn > span::after {
+	bottom: -10px;
+}
+
+.ham-btn.active > span {
+	background-color: transparent;
+}
+
+.ham-btn.active > span::before {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: all 0.5s;
+}
+
+.ham-btn.active > span::after {
+	transform: rotate(45deg);
+	bottom: 0;
+	transition: all 0.5s;
+}
+
+@media (max-width: 1703px) {
+	.smile-depth {
+		right: 0
+	}
+}
+
+@media (max-width: 1397px) {
+	.navi-menu {
+		margin-left: 127px;
+	}
+}
+
+@media (max-width: 1258px) {
+	.navi-list a {
+		display: inline-block;
+		padding: 22px 30px;
+	}
+}
+
+@media (max-width: 1164px) {
+	.navi-menu {
+		margin-left: 110px;
+	}
+	.navi-list a {
+		display: inline-block;
+		padding: 22px 20px;
+	}
+}
+@media (max-width: 1050px) {
+	.navi-menu  {
+		display: none;
+	}
+}
+
+nav.on {
+	display: block;
+}
+
+nav  {
+	display: none;
+	position: fixed;
+    max-width: 1500px;
+    padding: 0 20px;
+    transform: translateX(-50%);
+    width: 100%;
+	left: 50%;
+    top: 59px;
+    z-index: 99;
+}
+.teb-menu-top {
+	border: 1px solid #222;
+	padding: 20px 0px;
+	width: 295px;
+	background-color: #fff;
+	padding-bottom: 0;
+}
+.teb-menu-top li .posi {
+	position: relative;
+}
+.teb-box li {
+	padding: 20px 0px;
+	font-size: 16px;
+}
+
+.menu-title {
+	display: flex;
+	padding-bottom: 12px;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 20px;
+}
+.teb-btn > span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	background: url(../img/lush_black_arr.png) no-repeat center center /100%;
+	transition: 0.5s;
+}
+.teb-btn.on > span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	background: url(../img/arr_bot.png) no-repeat center center /100%;
+}
+.depth-box {
+	display: none;
+}
+.depth-box.on {
+	display: block;
+} 
+.depth {
+	padding: 20px 30px;
+	font-size: 18px;
+	background-color: beige;
+	padding-right: 10px;
+}
+
+.menu .depth:last-child {
+	padding-bottom: 0;
+}
+ .menu-tit {
+	display: flex;
+	padding-bottom: 12px;
+	justify-content: space-between;
+	font-size: 14px;
+	padding-right: 13px;
+}
+.depth-box .sub-teb-btn {
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+}
+
+.depth-box .sub-teb-btn > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.depth-box .sub-teb-btn > span::before, 
+.depth-box .sub-teb-btn > span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    transition: 0.3s;
+}
+.depth-box .sub-teb-btn > span::before {
+    width: 1px;
+    height: 100%;
+}
+.depth-box .sub-teb-btn > span::after {
+    width: 100%;
+    height: 1px;
+}
+.depth-box .depth.on .sub-teb-btn > span::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+} 
+
+/*옆으로 나오는 서브텝*/
+.sub-teb-btn {
+	position: relative;
+    width: 15px;
+    height: 15px;
+	text-indent: -9999px;
+}
+
+.sub-teb-btn > span::before, 
+.sub-teb-btn > span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    transition: 0.3s;
+}
+.sub-teb-btn > span::before {
+    width: 1px;
+    height: 100%;
+}
+.sub-teb-btn > span::after {
+    width: 100%;
+    height: 1px;
+} 
+
+.sub01 {
+	display: none;
+}
+.sub01.on {
+	display: block;
+}
+.sub01.on {
+	position: absolute;
+	width: 185px;
+	top: 0;
+	left: 100%;
+	border: 1px solid #222;
+	background-color: #fff;
+	padding: 30px 20px;
+}
+.bkpd {
+	display: none;
+}
+.bkpd.on {
+	display: block;
+	display: flex;
+	justify-content: space-between;
+}
+.sub01 .t-left > li {
+	display: block;
+	text-align: left;
+}
+.sub01 .t-left > li > a {
+	font-size: 14px;
+}
+.bkpd > ul {
+	width: 50%;
+}
+.sub01 li {
+	padding: 7px 0px;
+	text-align: center;
+}
+
+.sub01 li > a {
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	color: #8888;
+}
+.sub01 li > a:hover{
+	color: #222;
+}
+
+.sub01 li > .bold {
+	font-size: 18px;
+	font-weight: 500;
+	color: #222;
+	padding-bottom: 0;
+}
+.sub01 li > .bold.t-left {
+	display: inline-block;
+	text-align: left;
+}
+
+
+
+/*로그인 바텀*/
+.teb-menu-bot {
+	border: 1px solid #222;
+	padding: 10px 0px;
+	background-color: #222;
+	width: 295px;
+}
+.rogin-box li {
+	display: block;
+	padding: 8px 0px;
+	padding-left: 30px;
+	
+}
+.rogin-box li a {
+	font-size: 8px;
+	color: #fff;
+}
+.rogin-box li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 1050px) {
+	nav {
+		top: 60px;
+	}
+}
