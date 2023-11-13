@@ -62,13 +62,19 @@ footer p, footer span , footer button {
 	font-weight: 500;
 }
 
-.noticemore > span {
+.noticemore > a {
 	position: relative;
 	font-size: 11px;
 	padding-right: 40px;
 	letter-spacing: -0.05em;
+	cursor: pointer;
 }
-.noticemore > span::before {
+
+.noticemore > a > span:hover{
+	border-bottom: 1px solid #fff;
+}
+
+.noticemore > a::before {
 	content: "";
     position: absolute;
     top: 1px;
@@ -78,7 +84,7 @@ footer p, footer span , footer button {
     height: 12px;
     background-color: #444;
 }
-.noticemore > span:last-child::before {
+.noticemore > a:last-child::before {
 	display: none;
 }
 .footer-list02 {
@@ -174,6 +180,11 @@ footer p, footer span , footer button {
 	border: 1px solid #fff;
 	padding: 7px 0;
 }
+
+.faq > a:hover {
+	opacity: 0.5;
+}
+
 .faq span {
 		font-size: 11px;
 		letter-spacing: -0.02em;
@@ -256,7 +267,7 @@ footer .email-box input {
 	.txt01 {
 		font-size: 12px;
 	}
-	.noticemore > span {
+	.noticemore > a {
 		font-size: 8px;
 	}
 	.phone > span:first-child {
@@ -300,10 +311,10 @@ footer .email-box input {
 	.notice {
 		padding: 30px 18px;
 	}
-	.noticemore > span {
+	.noticemore > a {
 		padding-right: 30px;
 	}
-	.noticemore > span::before {
+	.noticemore > a::before {
 		right: 14px;
 	}
 	.check {
@@ -328,10 +339,10 @@ footer .email-box input {
 	.notice {
 		padding: 0px 150px;
 	}
-	.noticemore > span {
+	.noticemore > a {
 	    padding-right: 50px;
 	}
-	.noticemore > span::before {
+	.noticemore > a::before {
 		top: 2px;
 		right: 30px;
 	}
@@ -374,7 +385,7 @@ footer .email-box input {
 	/*.pdd {
 		padding: 2px 2px;
 	}*/
-	.noticemore > span {
+	.noticemore > a {
 		font-size: 13px;
 	}
 	.adress {
@@ -446,10 +457,10 @@ footer .email-box input {
 	}
 } 
 @media (max-width: 982px) {
-	.noticemore > span {
+	.noticemore > a {
 	    padding-right: 34px;
 	}
-	.noticemore > span::before {
+	.noticemore > a::before {
 	    right: 15px;
 	}
 } 
@@ -459,7 +470,7 @@ footer .email-box input {
 	}
 } 
 @media (max-width: 858px) {
-	.noticemore > span {
+	.noticemore > a {
 	    padding-right: 52px;
 	}
 	.footer-list02 {
@@ -467,10 +478,10 @@ footer .email-box input {
 	}
 } 
 @media (max-width: 858px) {
-	.noticemore > span {
+	.noticemore > a {
 	    padding-right: 35px;
 	}
-	.noticemore > span::before {
+	.noticemore > a::before {
 	    right: 15px;
 	}
 }	
@@ -497,7 +508,7 @@ footer .email-box input {
 		width: 14px;
 		height: 14px;
 	}
-	.noticemore > span {
+	.noticemore > a {
 		font-size: 12px;
 		padding-right: 34px;
 	}
@@ -525,7 +536,7 @@ footer .email-box input {
 	footer {
 		padding: 10px;
 	}
-	.noticemore > span {
+	.noticemore > a {
 		font-size: 10px;
 		padding-right: 22px;
 	}
