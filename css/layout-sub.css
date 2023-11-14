@@ -54,9 +54,15 @@ img {
 	font-weight: 500;
 	margin: 0 60px;
 }
-.sub-teb > li > a:hover {
+
+.sub-teb > li > a {
+	color: #8888;
+}
+
+.sub-teb > li.active > a {
 	padding-bottom: 2px;
 	border-bottom: 2px solid #222;
+	color: #222;
 } 
 
 /*recycle01*/

@@ -26,5 +26,32 @@ $(function() {
 			$(".sub01").not($(this).siblings(".sub01")).removeClass("on");
 			$(this).siblings(".sub01") .stop().toggleClass("on");
 		});
+
+
+		let subteb = $(".sub-teb li");
+
+		subteb.eq(0).addClass("active");
+
+		subteb.on("click", function() {
+			$(this).addClass("active");
+			subteb.not(this).removeClass("active");
+		});
+
+		// let subTeb = $(".sub-teb li a");
+		// subTeb.on("click", function (e) {
+		// 	e.preventDefault();
+		// 	//let teBox = techContent.index();
+		// 	let activeIndex = $(this).index();
+		// 	//console.log("activeIndex" + activeIndex);
+		  
+		// 	techwrapperSwiper.slideTo(activeIndex);
+		//   });
+
+		// function subTebActive(idx) {
+		
+		// 	let subTebIDx = subTeb.eq(idx);
+		// 	subTebIDx.addClass("active").siblings().removeClass("active");
+		// }
+
 })
 		
