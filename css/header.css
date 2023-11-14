@@ -124,13 +124,18 @@ h1 a > span {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: #222;
-	transition: width 2s ease;
+	background-color: rgb(150, 51, 128);
+	transition: all 2s;
+	
 }
 .navi-list li.active::after {
 	display: block;
 	width: 100%;
 } 
+
+.navi-list li.active a {
+	color: rgb(150, 51, 128);
+}
 
 .ham-btn {
 	width: 28px;
