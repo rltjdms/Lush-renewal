@@ -156,9 +156,11 @@ h1 a > span {
 }
 .ham-btn > span::before {
 	top: -10px;
+	transition: all 0.5s;
 }
 .ham-btn > span::after {
 	bottom: -10px;
+	transition: all 0.5s;
 }
 
 .ham-btn.active > span {
@@ -363,7 +365,7 @@ nav  {
 	left: 100%;
 	border: 1px solid #222;
 	background-color: #fff;
-	padding: 30px 20px;
+	padding: 30px 0px;
 }
 .bkpd {
 	display: none;
@@ -377,6 +379,11 @@ nav  {
 	display: block;
 	text-align: left;
 }
+
+.sub01 .t-left > li:hover a {
+	color: #8888;
+}
+
 .sub01 .t-left > li > a {
 	font-size: 14px;
 }
@@ -384,7 +391,7 @@ nav  {
 	width: 50%;
 }
 .sub01 li {
-	padding: 7px 0px;
+	padding: 7px 20px;
 	text-align: center;
 }
 
