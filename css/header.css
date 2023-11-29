@@ -143,6 +143,11 @@ h1 a > span {
 	text-indent: -9999px;
 	vertical-align: middle
 }
+
+.ham-btn:focus {
+	border: 2px solid #222;
+}
+
 .ham-btn > span {
 	position: relative;
 	display: block;
