@@ -20,7 +20,7 @@ $(function() {
 			$(this).siblings(".depth-box") .stop().slideToggle();
 		});
 		$(".menu-tit").on("click", function() {
-			console.log($(this).parent(), "ttt")
+			// console.log($(this).parent(), "ttt")
 			$(".depth").not($(this).parent()).removeClass("on");
 			$(this).parent().toggleClass("on");
 			$(".sub01").not($(this).siblings(".sub01")).removeClass("on");
