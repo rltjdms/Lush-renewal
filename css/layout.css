@@ -45,7 +45,7 @@ img {
 .main-slider .slick-slide {
 	position: relative;
 	height: 835px;
-	background: url(../img/main-1.jpg) no-repeat 0 0 / cover;
+	background: url(../img/main-1.jpg) no-repeat center / cover;
 }
 .main-slider .main-list02 {
 	background-image: url(../img/main_2.png);
@@ -127,6 +127,8 @@ img {
 	font-weight: 500;
 	letter-spacing: -0.02em;
 }
+
+
 .main-visual span {
 	font-size: 21px;
 	font-weight: 500;
